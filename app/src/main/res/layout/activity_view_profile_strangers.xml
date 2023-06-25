@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfileStrangers"
+    android:background="#FAB832"
+    >
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            >
+                        <ImageView
+                            android:id="@+id/btnbackk"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/ic_row_left"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:text="Profil"
+                android:fontFamily="@font/poppinssemibold"/>
+
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_large"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RelativeLayout
+            android:layout_below="@+id/namauserdanemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:id="@+id/tamplatetel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:id="@+id/titlenotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/titlnohp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="No.Hp"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/ic_rowright"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_width="24dp"-->
+                    <!--                        android:layout_height="24dp"-->
+                    <!--                        android:background="@drawable/ic_expand_right"-->
+                    <!--                        />-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:layout_toStartOf="@+id/ic_rowright"-->
+                    <!--                        android:fontFamily="@font/poppinsmedium"-->
+                    <!--                        android:text="Edit"-->
+                    <!--                        android:textSize="14dp"-->
+                    <!--                        android:textColor="@color/kuning" />-->
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/titlenotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/txtnohp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="082127602881"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                    <ImageView
+                        android:id="@+id/copyy"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/ic_copy"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tamplategender"
+                android:layout_below="@+id/tamplatetel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:id="@+id/titlegender2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/titlegender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Gender"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/ic_rowright2"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_width="24dp"-->
+                    <!--                        android:layout_height="24dp"-->
+                    <!--                        android:background="@drawable/ic_expand_right"-->
+                    <!--                        />-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:layout_toStartOf="@+id/ic_rowright2"-->
+                    <!--                        android:fontFamily="@font/poppinsmedium"-->
+                    <!--                        android:text="Edit"-->
+                    <!--                        android:textSize="14dp"-->
+                    <!--                        android:textColor="@color/kuning" />-->
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/titlegender2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/txtgender2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="-"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tamplatealamat"
+                android:layout_below="@+id/tamplategender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:id="@+id/tamplatealamat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/titleAlamat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Alamat"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/ic_rowright3"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_width="24dp"-->
+                    <!--                        android:layout_height="24dp"-->
+                    <!--                        android:background="@drawable/ic_expand_right"-->
+                    <!--                        />-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:layout_toStartOf="@+id/ic_rowright3"-->
+                    <!--                        android:fontFamily="@font/poppinsmedium"-->
+                    <!--                        android:text="Edit"-->
+                    <!--                        android:textSize="14dp"-->
+                    <!--                        android:textColor="@color/kuning" />-->
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/tamplatealamat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/isiAlamat2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="-"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                    <!--                    <Button-->
+                    <!--                        android:layout_marginTop="30dp"-->
+                    <!--                        android:layout_below="@+id/isiAlamat"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="40dp"-->
+                    <!--                        android:textColor="#fff"-->
+                    <!--                        android:text="Keluar"-->
+                    <!--                        android:textSize="14dp"-->
+                    <!--                        android:fontFamily="@font/poppinssemibold"-->
+                    <!--                        android:background="@drawable/button_rounded"/>-->
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:cardCornerRadius="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            >
+            <ImageView
+                android:id="@+id/imgstrangers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/profil"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <RelativeLayout
+            android:id="@+id/namauserdanemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pp"
+            >
+            <TextView
+                android:id="@+id/txtuserprof2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vildan Vinanda"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txteamil2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtuserprof2"
+                android:fontFamily="@font/poppinslight"
+                android:text="VildanVinanda2@gmail.com"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <RelativeLayout
+            android:id="@+id/tamplateinti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/image_onboarding"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:background="@drawable/megang_hp"
+                />
+
+            <TextView
+                android:id="@+id/jdl"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/image_onboarding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Peternakan"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="#0A0A0A"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/subjdl"
+                android:layout_below="@id/jdl"
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="Aplikasi ini akan membantu kamu untuk mengelola peternakan dengan baik."
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="#0A0A0A"
+                android:textSize="14dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

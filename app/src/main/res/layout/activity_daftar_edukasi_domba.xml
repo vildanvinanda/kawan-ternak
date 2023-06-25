@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaftarEdukasiDomba"
+    android:background="@color/white"
+    >
+
+<RelativeLayout
+    android:id="@+id/titleEdukasi"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:background="@drawable/rextangel_header"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:id="@+id/backbtnedu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_row_left"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Edukasi"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/idsearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/titleEdukasi"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="20dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:cardCornerRadius="20dp"
+        >
+        <ImageView
+            android:id="@+id/imgheader2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dombakku"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/kolomsearch"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/icontgl"
+        android:background="@drawable/bgedittext"
+        android:drawableEnd="@drawable/ic_iconsearch"
+        android:elevation="8dp"
+        android:hint="Type something"
+        android:textColorHint="#dfdfdf"
+        android:paddingVertical="6dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:translationY="0dp"
+        android:translationZ="0dp"
+        android:layout_below="@+id/header"
+        android:inputType="textCapSentences"
+        android:singleLine="true"
+        />
+
+    <ImageView
+        android:id="@+id/icontgl"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+
+        android:paddingVertical="10dp"
+        android:src="@drawable/ic_icondate" />
+
+    <View
+        android:id="@+id/lane11"
+
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/icontgl"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="1dp"
+        android:background="#DDD"/>
+</RelativeLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_below="@+id/idsearch"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recdaftaredu"
+    />
+
+<RelativeLayout
+    android:id="@+id/empty2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_below="@+id/idsearch"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        <ImageView
+            android:id="@+id/emptyimage"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:background="@drawable/not_found"
+            />
+        <TextView
+            android:id="@+id/emptytitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emptyimage"
+            android:text="List Edukasi Kosong"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/emptysubtitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emptytitle"
+            android:text="Mohon maaf list akan ditambahkan beberapa waktu kemudian"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+</RelativeLayout>

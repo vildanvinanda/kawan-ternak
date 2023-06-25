@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetCountainerTanggal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_top"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/icfilter"
+                android:layout_alignParentStart="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_iconfilter"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/icfilter"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Filter Tanggal"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/btnclosefilter"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_xmark" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/mulaidari"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txtMulaidari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mulai Dari :"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppinsregular"
+            />
+            <EditText
+
+                android:id="@+id/eddmulaidari"
+                android:layout_below="@+id/txtMulaidari"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/ictglartikelfilter"
+                android:background="@drawable/bgedittext"
+                android:elevation="8dp"
+                android:hint="Mulai"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:translationY="0dp"
+                android:translationZ="-5dp"
+                android:shadowColor="@color/kuning"
+                android:layout_marginBottom="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/ictglartikelfilter"
+                android:layout_width="40dp"
+                android:layout_below="@+id/txtMulaidari"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:translationZ="3dp"
+                android:background="@drawable/button_rounded"
+                android:elevation="2dp"
+                android:paddingVertical="10dp"
+                android:src="@drawable/ic_icondate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="9dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@+id/mulaidari"
+            android:id="@+id/sampaidengan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txtSampaidengan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Sampai Dengan :"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:id="@+id/eddsampadengan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSampaidengan2"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/ictglartikelfilter22"
+                android:background="@drawable/bgedittext"
+                android:elevation="8dp"
+                android:hint="Sampai"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:translationY="0dp"
+                android:translationZ="-5dp" />
+
+            <ImageView
+                android:id="@+id/ictglartikelfilter22"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtSampaidengan2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/button_rounded"
+                android:elevation="0dp"
+                android:translationZ="3dp"
+                android:paddingVertical="10dp"
+                android:src="@drawable/ic_icondate" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btncarifiltertanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sampaidengan2"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Cari"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/no_internet_layout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/bg_nointernet"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/gambar_lost"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:background="@drawable/lost_connect_img"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/jdltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada Internet"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/gambar_lost"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/subjdl"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Tolong periksa jaringan internet anda dan coba hubungkan kembali.!"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/jdltxt"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/btn_try"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="Coba Lagi"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/subjdl"
+        android:background="@drawable/btnsend"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+
+
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

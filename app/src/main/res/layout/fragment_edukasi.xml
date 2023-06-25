@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EdukasiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/titleKeuangan"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="@drawable/rextangel_header"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_centerVertical="true"
+                >
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/backbtnkeuangan"-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:background="@drawable/ic_row_left"-->
+<!--                    />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edukasi"
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleKeuangan"
+            android:layout_marginTop="30dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:paddingBottom="100dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/kambing"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:cardCornerRadius="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/lkambinggku"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/domba"
+                    android:layout_below="@+id/kambing"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:cardCornerRadius="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dombakku"/>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sapi"
+                    android:layout_below="@+id/domba"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    app:cardCornerRadius="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sapiku"/>
+
+                </androidx.cardview.widget.CardView>
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/ayam"-->
+<!--                    android:layout_below="@+id/sapi"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="110dp"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/ic_bgeduayam"/>-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:id="@+id/titleeduayam"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Ayam"-->
+<!--                            android:fontFamily="@font/poppinsmedium"-->
+<!--                            android:textColor="#fff"-->
+<!--                            android:textSize="20dp"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_below="@+id/titleeduayam"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:id="@+id/subtitleeduayam"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Belajar Ternak Ayam yuk"-->
+<!--                            android:fontFamily="@font/poppinsregular"-->
+<!--                            android:textColor="#fff"-->
+<!--                            android:textSize="12dp"/>-->
+
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/kelinci"-->
+<!--                    android:layout_below="@+id/ayam"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="110dp"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/ic_bgedukelinci"/>-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:id="@+id/titleedukelinci"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Kelinci"-->
+<!--                            android:fontFamily="@font/poppinsmedium"-->
+<!--                            android:textColor="#fff"-->
+<!--                            android:textSize="20dp"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_below="@+id/titleedukelinci"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:id="@+id/subtitleedukelinci"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Belajar Ternak Kelinci yuk"-->
+<!--                            android:fontFamily="@font/poppinsregular"-->
+<!--                            android:textColor="#fff"-->
+<!--                            android:textSize="12dp"/>-->
+
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/bebek"-->
+<!--                    android:layout_below="@+id/kelinci"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="110dp"-->
+<!--                    app:cardCornerRadius="20dp"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/ic_bgedubebek"/>-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        >-->
+<!--                        <TextView-->
+<!--                            android:layout_marginTop="15dp"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:id="@+id/titleedubebek"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Bebek"-->
+<!--                            android:fontFamily="@font/poppinsmedium"-->
+<!--                            android:textColor="#fff"-->
+<!--                            android:textSize="20dp"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_below="@+id/titleedubebek"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:id="@+id/subtitleedubebek"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Belajar Ternak Bebek yuk"-->
+<!--                            android:fontFamily="@font/poppinsregular"-->
+<!--                            android:textColor="#fff"-->
+<!--                            android:textSize="12dp"/>-->
+
+<!--                    </RelativeLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

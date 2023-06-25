@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:translationZ="2dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginHorizontal="15dp"
+    android:id="@+id/itemsedu"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/bgcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/imgartikelsolo"
+
+            >
+            <ImageView
+                android:id="@+id/imageedu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sapi"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/juduledu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anak usia 13 tahun sudah menjadi peternak yang sukses"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="#000"
+            android:layout_toEndOf="@+id/imgartikelsolo"
+            android:layout_marginHorizontal="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+
+            />
+        <TextView
+            android:id="@+id/subedu"
+            android:layout_below="@+id/juduledu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anak usia 13 tahun sudah menjadi peternak yang sukses"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="#000"
+            android:layout_toEndOf="@+id/imgartikelsolo"
+            android:layout_marginHorizontal="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+
+            />
+        <TextView
+            android:id="@+id/tgledu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02/09/2022"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="#B6B6B6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

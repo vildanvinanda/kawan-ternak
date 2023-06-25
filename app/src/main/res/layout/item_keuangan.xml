@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pengeluaran1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="5dp"
+    android:background="@color/white"
+    app:cardCornerRadius="15dp"
+    >
+    <RelativeLayout
+        android:id="@+id/bgcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFEDED"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/titleKeuangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Pengeluaran"
+                android:textColor="#ED4444"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/tresmerah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_icontresh"
+                android:layout_alignParentEnd="true"
+                />
+            <ImageView
+                android:id="@+id/tresshijau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_icontreshhijauw"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                />
+            <RelativeLayout
+                android:layout_below="@+id/titleKeuangan"
+                android:id="@+id/tamplate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/titletxtKet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Keterangan :"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/txttotall"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Total"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/tamplate1"
+                android:id="@+id/tamplate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:id="@+id/txtKet"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Membeli barang digurun pasir yang indahlsasldalsdlasdlasdasdasdasdasdsdl kakskaksa"
+                    android:textColor="#000"
+                    android:textSize="12dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:drawablePadding="20dp"
+                    />
+                <TextView
+                    android:id="@+id/txttotalh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Rp.100.000,00"
+                    android:textColor="#ED4444"
+                    android:textSize="12dp"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tglkirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20/09/2022"
+                android:textColor="#777777"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

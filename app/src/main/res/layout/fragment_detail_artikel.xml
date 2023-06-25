@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailArtikelFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/titleEdukasi"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="@drawable/rextangel_header"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_centerVertical="true"
+                >
+
+                <ImageView
+                    android:id="@+id/backbtnkeuangan"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_row_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Artikel"
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleEdukasi"
+            android:layout_marginTop="30dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:paddingBottom="100dp"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/imgHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ImageHolder"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/kambingmakan"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/judulArtikel"
+                    android:layout_below="@+id/imgHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pakan terbaik Untuk Kambing"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tglterbitArtikel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B6B6B6"
+                    android:textSize="10dp"
+                    android:text="20/09/2022"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_below="@+id/judulArtikel"
+                    />
+                <TextView
+                    android:id="@+id/isiArtikel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Pakan yang diberikan untuk kambing terdiri atas tiga jenis, yaitu pakan hijauan, dedaunan, dan pakan penguat. Pada dasarnya ada banyak jenis pakan hijauan kambing yang tersedia secara alami. Namun, di antara semua pakan hijauan, ada beberapa jenis hijauan yang bagus untuk kambing. Simak ulasan berikut.
+\n
+\nDaun Singkong
+\nDaun singkong mengandung protein yang cukup tinggi sekitar 16,7—39,9 persen bahan kering dan hampir 85 persen dari fraksi protein kasarnya merupakan protein murni. Kandungan pati tertinggi terdapat di dalam kulit dan onggok sehingga bagian tersebut dapat digunakan sebagai sumber energi.
+\n
+\nRumput Taiwan
+\nRumput taiwan berukuran cukup besar, yaitu sekitar 4—5 m. Rumput ini berbatang lunak, daunnya lebar berbulu lembut, mengandung nutrisi yang cukup baik, dan batang bawah tanaman bewarna kemerahan."
+                    android:fontFamily="@font/poppinsmedium"
+                    android:layout_below="@+id/tglterbitArtikel"
+                    android:justificationMode="inter_word"
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HubungiKamiActivity"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:id="@+id/titlehubungi"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="#FAB832"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:id="@+id/backbtnhubungi"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_row_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hubungi Kami"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/titlehubungi"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        >
+        <TextView
+            android:id="@+id/titledari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dari :"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="14dp"
+            android:textColor="#242424"/>
+        <TextView
+            android:id="@+id/inputuser"
+            android:layout_toEndOf="@+id/titledari"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email User"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="14dp"
+            android:textColor="#242424"/>
+
+        <TextView
+            android:layout_below="@+id/titledari"
+            android:layout_marginTop="10dp"
+            android:id="@+id/titlepesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertanyaan saya :"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="14dp"
+            android:textColor="#242424"/>
+        <EditText
+            android:id="@+id/inputpesan"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#D4D4D4"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bgedittext"
+            android:elevation="8dp"
+            android:hint="Masukan pertanyaan"
+            android:paddingVertical="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:translationY="0dp"
+            android:translationZ="-5dp"
+            android:shadowColor="@color/kuning"
+            android:layout_marginBottom="10dp"
+            android:maxHeight="100dp"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:layout_below="@+id/titlepesan"
+            />
+
+        <Button
+            android:id="@+id/btnkirimpesanadmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputpesan"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Kirim"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

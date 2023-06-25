@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaqActivity"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:id="@+id/titleFaq"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="#FAB832"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:id="@+id/backbtnfaq"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_row_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQ"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recfaq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleFaq"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        tools:listitem="@layout/item_faq"
+        />
+
+</RelativeLayout>

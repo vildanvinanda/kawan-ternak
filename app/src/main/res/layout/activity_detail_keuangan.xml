@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailKeuanganActivity"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titleDetailkeu"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@drawable/rextangel_header"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/backbtnkeuangan"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_row_left"
+                />
+
+            <TextView
+                android:id="@+id/titleDetailkeu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Pengeluaran"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/titleDetailkeu"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/satu">
+
+            <TextView
+                android:id="@+id/txtket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keterangan :"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinsregular"
+                />
+            <TextView
+                android:id="@+id/inket"
+                android:layout_below="@+id/txtket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Membeli kambing"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinssemibold"
+                />
+            <View
+                android:id="@+id/lane1"
+                android:layout_marginVertical="10dp"
+                android:layout_below="@+id/inket"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DEDADA"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/satu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dua">
+
+            <TextView
+                android:id="@+id/txtJumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah :"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinsregular"
+                />
+            <TextView
+                android:id="@+id/injumlah"
+                android:layout_below="@+id/txtJumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Ekor"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinssemibold"
+                />
+            <View
+                android:id="@+id/lane2"
+                android:layout_marginVertical="10dp"
+                android:layout_below="@+id/injumlah"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DEDADA"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/dua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiga">
+            <TextView
+                android:id="@+id/txtharga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Satuan :"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinsregular"
+                />
+            <TextView
+                android:id="@+id/inharga"
+                android:layout_below="@+id/txtharga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.600.000,00"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinssemibold"
+                />
+            <View
+                android:id="@+id/lane3"
+                android:layout_marginVertical="10dp"
+                android:layout_below="@+id/inharga"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DEDADA"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/tiga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/empat">
+            <TextView
+                android:id="@+id/txttotalh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Harga :"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinsregular"
+                />
+            <TextView
+                android:id="@+id/intotal"
+                android:layout_below="@+id/txttotalh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.1.200.000,00"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinssemibold"
+                />
+            <View
+                android:id="@+id/lane4"
+                android:layout_marginVertical="10dp"
+                android:layout_below="@+id/intotal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DEDADA"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/empat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lima">
+            <TextView
+                android:id="@+id/txtTgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal :"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinsregular"
+                />
+            <TextView
+                android:id="@+id/intgl"
+                android:layout_below="@+id/txtTgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03-Des-2022"
+                android:textSize="12dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/poppinssemibold"
+                />
+            <View
+                android:id="@+id/lane5"
+                android:layout_marginVertical="10dp"
+                android:layout_below="@+id/intgl"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DEDADA"
+                />
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

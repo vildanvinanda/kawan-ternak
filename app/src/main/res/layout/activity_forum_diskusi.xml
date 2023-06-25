@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ForumDiskusiActivity"
+    android:background="@drawable/ic_bgchatdorum"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/titleKeuangan"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/rextangel_header"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+                <RelativeLayout
+                    android:id="@+id/inititle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+
+                    >
+                    <ImageView
+                        android:id="@+id/backbtndiskusi"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_row_left"
+                        />
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forum Diskusi"
+                        android:textSize="16dp"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:layout_centerHorizontal="true"/>
+
+<!--                    <androidx.appcompat.widget.Toolbar-->
+<!--                        android:id="@+id/toolbar"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        app:menu="@menu/menusearch" />-->
+
+
+                </RelativeLayout>
+<!--                <EditText-->
+<!--                    android:id="@+id/kolomsearchchat"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/inititle"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:background="@drawable/bgedittext"-->
+<!--                    android:drawableEnd="@drawable/ic_iconsearch"-->
+<!--                    android:elevation="8dp"-->
+<!--                    android:hint="Type something"-->
+<!--                    android:paddingVertical="6dp"-->
+<!--                    android:paddingStart="20dp"-->
+<!--                    android:paddingEnd="20dp"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:translationY="0dp"-->
+<!--                    android:translationZ="0dp"-->
+<!--                    android:textColorHint="#565656"-->
+<!--                    />-->
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+<!--        <View-->
+<!--            android:layout_marginHorizontal="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_below="@+id/kolomsearchchat"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="#DDD"/>-->
+
+
+
+            <RelativeLayout
+                android:layout_above="@+id/sendchatcountainer"
+                android:layout_below="@+id/titleKeuangan"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/recviewchat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btnscrolldown"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_scroldown"
+            android:layout_above="@+id/sendchatcountainer"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:id="@+id/sendchatcountainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+                android:id="@+id/sendCamera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_photo"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:id="@+id/sendPicturechat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/sendCamera"
+                android:background="@drawable/ic_paperclip"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:id="@+id/addpesann"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/sendbtn"
+                android:layout_toEndOf="@+id/sendPicturechat"
+                android:background="@drawable/kolomchat"
+                android:hint="Ketik sesuatu"
+                android:maxHeight="100dp"
+                android:overScrollMode="always"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textColorHint="#565656"
+                android:textSize="14dp" />
+            <RelativeLayout
+                android:id="@+id/sendbtn"
+                android:layout_alignParentEnd="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btnsend"
+                >
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_send"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

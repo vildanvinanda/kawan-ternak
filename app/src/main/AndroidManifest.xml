@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectkt">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectKT.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DetailHewanWithScam"></activity>
+        <!-- <provider -->
+        <!-- android:name="androidx.core.content.FileProvider" -->
+        <!-- android:authorities="${applicationId}.fileprovider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/file_paths" /> -->
+        <!-- </provider> -->
+        <activity android:name=".TambahHewan2" />
+        <activity android:name=".DaftarEdukasiDomba" />
+        <activity android:name=".DaftarHewanSapi" />
+        <activity android:name=".OnboargingActivity" />
+        <activity android:name=".DetailFotoDafHewanActivity" />
+        <activity android:name=".DetailNotificationActivity" />
+        <activity android:name=".NotificatonActivity" />
+        <activity android:name=".ViewProfileStrangers" />
+        <activity android:name=".DaftarArtikelFIXActivity" />
+        <activity android:name=".DaftarEdukasiActivity" />
+        <activity android:name=".DetailKeuanganActivity" />
+        <activity android:name=".FaqActivity" />
+        <activity android:name=".HubungiKamiActivity" />
+        <activity android:name=".UbahProfilActivity" />
+        <activity android:name=".SettingActivityMenu" />
+        <activity android:name=".DetailFotoChat" />
+        <activity android:name=".ForumDiskusiActivity" />
+        <activity android:name=".UpdateDataHewan" />
+        <activity android:name=".qrcode.ContohQrcodeScannerActivity" />
+        <activity android:name=".qrcode.contohaddDataSQLActivity" />
+        <activity android:name=".DaftarArtikelActivity" />
+        <activity android:name=".DetailArtikelActivity" />
+        <activity android:name=".UploadArtikelAdmin" />
+        <activity android:name=".UbahDetailHewanActivity" />
+        <activity android:name=".DetailHewanActivity" />
+        <activity android:name=".FormHewanActivity" />
+        <activity android:name=".DaftarHewanActivity" />
+        <activity android:name=".FormPengeluaranActivity" />
+        <activity android:name=".FormPemasukanActivity" />
+        <activity android:name=".DetailEdukasiActivity" />
+        <activity android:name=".SelectEdukasiActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfilActivityAdmin" />
+        <activity android:name=".ProfilActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

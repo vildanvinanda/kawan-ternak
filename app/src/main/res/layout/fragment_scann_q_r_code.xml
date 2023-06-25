@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qrcode.ScannQRCodeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:text="Hallo"
+            android:id="@+id/txthallo2"
+            />
+        <ImageView
+            android:id="@+id/gambar2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txthallo2"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reccontoh2"
+            android:layout_below="@+id/gambar2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="Yu scan qrcode"
+                android:id="@+id/txtket2"
+                />
+
+            <Button
+                android:id="@+id/btnscanner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SCAN NOW"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

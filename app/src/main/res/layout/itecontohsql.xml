@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:translationZ="2dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginHorizontal="15dp"
+    android:id="@+id/itemcontoh"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/bgcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/imgartikelsolo"
+
+            >
+            <ImageView
+                android:id="@+id/fotoh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_launcher_background"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/innamah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/imgartikelsolo"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Jomplang"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_below="@+id/innamah"
+            android:id="@+id/tctjk"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="J.Kelamin"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="#000"
+            android:layout_toEndOf="@+id/imgartikelsolo"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tik1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/innamah"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tctjk"
+            android:fontFamily="@font/poppinsregular"
+            android:text=":"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+         <TextView
+            android:id="@+id/injk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/innamah"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tik1"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Jantan"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtstatus"-->
+<!--            android:layout_width="90dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tctjk"-->
+<!--            android:layout_marginStart="9dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="-1dp"-->
+<!--            android:layout_toEndOf="@+id/imgartikelsolo"-->
+<!--            android:fontFamily="@font/poppinsregular"-->
+<!--            android:text="Status Hewan"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="12dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/instatus"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/injk"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="-1dp"-->
+<!--            android:layout_toEndOf="@+id/tik1"-->
+<!--            android:fontFamily="@font/poppinsregular"-->
+<!--            android:text="Belum Kawin"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="12dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tik2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/tik1"-->
+<!--            android:layout_marginStart="0dp"-->
+<!--            android:layout_toEndOf="@+id/tctjk"-->
+<!--            android:fontFamily="@font/poppinsregular"-->
+<!--            android:text=":"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="12dp" />-->
+
+        <TextView
+            android:layout_below="@+id/injk"
+            android:id="@+id/txtkeshatan"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="Kesehatan"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="#000"
+            android:layout_toEndOf="@+id/imgartikelsolo"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tik3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/injk"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tctjk"
+            android:fontFamily="@font/poppinsregular"
+            android:text=":"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+<!--         <TextView-->
+<!--            android:id="@+id/inkesehatan"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/injk"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_toEndOf="@+id/tik1"-->
+<!--            android:fontFamily="@font/poppinsregular"-->
+<!--            android:text="Sehat"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="12dp" />-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bgstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/injk"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/tik3"
+            app:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/bgkesehatan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFDEDE"
+                >
+                <TextView
+                    android:id="@+id/inkesehatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:paddingHorizontal="5dp"
+                    android:text="Sakit"
+                    android:textColor="#DD5454"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/txtnokandang"
+            android:background="#D9D9D9" />
+
+        <TextView
+            android:id="@+id/txtnokandang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intglhewan"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Kandang"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/innokandang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtnokandang"
+            android:layout_alignParentEnd="true"
+            android:text="04"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            />
+
+
+        <TextView
+            android:id="@+id/intglhewan"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppinsregular"
+            android:text="02/09/2022"
+            android:textColor="#D9D9D9"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

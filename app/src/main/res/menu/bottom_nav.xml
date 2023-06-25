@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item android:title="Home"
+        android:enabled="true"
+        android:id="@+id/miHome"
+        android:icon="@drawable/child_selector"
+        app:showAsAction="ifRoom"
+        />
+    <item android:title="Keuangan"
+        android:id="@+id/miKeuangan"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/child_selector2"/>
+
+    <item android:title=""
+        android:id="@+id/minull"
+        />
+    <item android:title="Edukasi"
+        android:enabled="true"
+        android:id="@+id/miEdu"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/child_selector3"/>
+    <item android:title="Profil"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/miProfile"
+        android:icon="@drawable/child_selector4"/>
+</menu>

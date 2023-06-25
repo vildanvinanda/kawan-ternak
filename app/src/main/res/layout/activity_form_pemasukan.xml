@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormPemasukanActivity"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/titleKeuangan"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="@drawable/rextangel_header"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_centerVertical="true"
+                >
+
+                <ImageView
+                    android:id="@+id/backbtnkeuangan"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_row_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Form Pemasukan"
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/form"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@+id/titleKeuangan"
+            android:layout_marginBottom="100dp"
+            >
+        <TextView
+            android:id="@+id/txtKetFormPemasukan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keterangan :"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="12dp"
+            android:textColor="#000"
+            />
+            <EditText
+                android:id="@+id/eddketformpemasukan"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtKetFormPemasukan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderform"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="Masukan keterangan"
+                android:maxHeight="100dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                />
+
+            <LinearLayout
+                android:id="@+id/containerrtysatuan"
+                android:layout_below="@+id/eddketformpemasukan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toStartOf="@+id/ceklayout"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtQtyFormPemasukan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Qty :"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/eddformqty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtQtyFormPemasukan"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/borderform"
+                            android:fontFamily="@font/poppinsregular"
+                            android:hint="Masukan Qty"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ceklayout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textformsatuan"
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Satuan :"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_satuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/borderform"
+                        android:paddingHorizontal="5dp"
+                         />
+                </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_below="@+id/containerrtysatuan"
+                android:id="@+id/txtHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga :"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                />
+
+            <RelativeLayout
+                android:id="@+id/containerharga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHarga"
+                >
+
+                <TextView
+                    android:id="@+id/Rp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp."
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="12dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/eddhargaformpemasukan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/Rp"
+                    android:background="@drawable/borderform"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Masukan Harga"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_below="@+id/containerharga"
+                android:id="@+id/txtTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total :"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                />
+
+            <RelativeLayout
+                android:id="@+id/containertotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTotal"
+                >
+
+                <TextView
+                    android:id="@+id/Rp2"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp."
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="12dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/eddtotalformpemasukan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/Rp2"
+                    android:background="@drawable/borderform"
+                    android:fontFamily="@font/poppinsregular"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnsimpanpemasukan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:layout_below="@+id/containertotal"
+                android:layout_marginTop="50dp"
+                android:paddingVertical="10dp"
+                android:background="@drawable/button_rounded"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinssemibold"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

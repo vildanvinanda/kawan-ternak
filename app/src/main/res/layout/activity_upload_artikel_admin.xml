@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadArtikelAdmin"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/titleKeuangan"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="@drawable/rextangel_header"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_centerVertical="true"
+                >
+
+                <ImageView
+                    android:id="@+id/backbtnkeuangan"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_row_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Form Artikel"
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleKeuangan"
+            >
+            <RelativeLayout
+                android:id="@+id/form"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:paddingBottom="100dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/gambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="208dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="20dp"
+                    >
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/uploadgambarartikel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_gambarempty"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_below="@+id/gambar"
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masukan Judul :"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    />
+                <EditText
+                    android:layout_below="@+id/txtTitle"
+                    android:id="@+id/eddTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borderform"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Masukan Judul Artikel"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    android:inputType="textMultiLine"
+                    />
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/eddTitle"
+                    android:id="@+id/txtTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Upload :"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    />
+
+                <EditText
+                    android:id="@+id/eddttl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTanggal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@+id/btnttl"
+                    android:background="@drawable/borderform"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Masukan Estimasi Umur"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/btnttl"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/txtTanggal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button_rounded"
+                    android:src="@drawable/ic_icondate"
+                    android:paddingVertical="10dp"
+                    android:elevation="10dp"
+                    />
+
+                <TextView
+                    android:layout_below="@+id/btnttl"
+                    android:id="@+id/txtIsiArtikel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masukan Isi Artikel :"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    />
+                <EditText
+                    android:layout_below="@+id/txtIsiArtikel"
+                    android:id="@+id/eddIsiArtikel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/borderform"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Masukan Estimasi Umur"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    android:inputType="textMultiLine"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/btnsimpanartikel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"
+                    android:layout_below="@+id/eddIsiArtikel"
+                    android:layout_marginTop="50dp"
+                    android:paddingVertical="5dp"
+                    android:background="@drawable/button_rounded"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinssemibold"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
